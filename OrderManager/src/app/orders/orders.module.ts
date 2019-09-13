@@ -5,14 +5,15 @@ import { OrdersRoutingModule } from './orders-routing.module';
 import { OrderDetailsComponent } from './order-details/order-details.component';
 
 @NgModule({
-  declarations: [OrderListComponent],
+  declarations: [
+    OrderListComponent,
+    OrderDetailsComponent
+  ],
   imports: [
     CommonModule,
     OrdersRoutingModule
   ],
   exports: [
-    OrderListComponent,
-    OrderDetailsComponent
   ]
 })
 export class OrdersModule { }
