@@ -2,11 +2,13 @@
   <thead>
     <tr>
       <th>ID</th>
-      <th>Customer</th>
-      <th>Date</th>
-      <th>Total</th>
+      <th>Name</th>
     </tr>
   </thead>
   <tbody>
+      <tr *ngFor="let customer of customers;">
+          <td><a [routerLink]="'/customer/' + customer.id">{{customer.id}}</a></td>
+          <td>{{customer.name}}</td>
+        </tr>
   </tbody>
 </table>
